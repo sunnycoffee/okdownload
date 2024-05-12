@@ -28,7 +28,7 @@ import com.liulishuo.okdownload.sample.R
 
 class QueueRecyclerAdapter(
     private val controller: QueueController
-) : androidx.recyclerview.widget.RecyclerView.Adapter<QueueRecyclerAdapter.QueueViewHolder>() {
+) : RecyclerView.Adapter<QueueRecyclerAdapter.QueueViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): QueueViewHolder {
         return QueueViewHolder(LayoutInflater.from(parent.context).inflate(
