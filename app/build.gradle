@@ -4,16 +4,9 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-//    buildToolsVersion rootProject.ext.buildToolsVersion
-
-//    compileOptions {
-//        sourceCompatibility rootProject.ext.sourceCompatibilityVersion
-//        targetCompatibility rootProject.ext.targetCompatibilityVersion
-//    }
 
     defaultConfig {
         applicationId "com.liulishuo.okdownload.sample"
-        // using 19, because we demo for content-uri(CATEGORY_OPENABLE)
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
 
@@ -52,13 +45,11 @@ dependencies {
     implementation dep.kotlinxCoroutines
     implementation dep.kotlinxCoroutineAndroid
     implementation dep.supportConstraintLayout
-//    testImplementation dep.junit
+
     implementation project(':okdownload')
     implementation project(':sqlite')
     implementation project(':okhttp')
     implementation project(':kotlin')
-
-//    compileOnly dep.findbugsAnnotations
 }
 
 kotlin {

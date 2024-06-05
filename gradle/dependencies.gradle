@@ -34,7 +34,6 @@ ext {
             // for okdownload-connection-okhttp
             okhttp3                     : "com.squareup.okhttp3:okhttp:3.9.1"
 
-
     ]
 
     isCi = "true" == System.getenv('CI')
