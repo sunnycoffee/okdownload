@@ -124,9 +124,9 @@ public class NotificationActivity extends BaseSampleActivity {
 
         final Intent intent = new Intent(CancelReceiver.ACTION);
         final PendingIntent cancelPendingIntent = PendingIntent.getBroadcast(this, 0, intent,
-                PendingIntent.FLAG_UPDATE_CURRENT);
+                PendingIntent.FLAG_IMMUTABLE);
 
-        listener.setAction(new NotificationCompat.Action(0, "Cancel", cancelPendingIntent));
+        listener.setAction(new NotificationCompat.Action(0, getString(R.string.cancel), cancelPendingIntent));
         listener.initNotification();
     }
 
