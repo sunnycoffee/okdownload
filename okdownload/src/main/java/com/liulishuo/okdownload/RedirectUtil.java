@@ -30,7 +30,7 @@ public class RedirectUtil {
      * How many redirects and auth challenges should we attempt? Chrome follows 21 redirects;
      * Firefox, curl, and wget follow 20; Safari follows 16; and HTTP/1.0 recommends 5.
      */
-    public static final int MAX_REDIRECT_TIMES = 10;
+    public static final int MAX_REDIRECT_TIMES = 30;
 
     /**
      * The target resource resides temporarily under a different URI and the user agent MUST NOT
